@@ -1,0 +1,18 @@
+Assignment 5 Grading Common Mistakes:
+Gjk.cpp:
+  SupportShape.Support:
+    Using floatMin instead of -floatMax
+    Not checking in local space
+  SupportShape.GetCenter:
+    Not checking in local space
+  Obb.Support:
+    Test all 8 points instead of the optimized support function
+  Gjk:
+    TriangleRegions:
+      Trying to use only the triangle barycentric coordinates
+    TetrahedronRegions:
+      Not computing all 6 edge and 3 triangle barycentric coordinates
+      Using triangle normals for the face regions but forgetting to make sure they point the right direction
+    Intersect:
+      Not checking against q exactly (shouldn't use an epsilon check)
+      Not computing the closest features when separating
