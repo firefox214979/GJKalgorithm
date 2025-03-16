@@ -1,1 +1,2 @@
-# GJKalgorithm
+GJK algorithm
+Language: c++
